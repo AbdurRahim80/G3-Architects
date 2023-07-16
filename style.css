@@ -8,7 +8,7 @@
 /* Style tor navbar */
 header {
     background: rgba(255, 144, 14, 0.10);
-    padding: 50px 240px;
+    padding: 30px 200px;
 }
 
 nav {
@@ -42,13 +42,17 @@ nav li a {
 
 /* style css for banner */
 .banner-contain {
+    text-align: center;
     max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 10px;
 }
 
 .banner-title {
     color: #131313;
     font-size: 4rem;
     font-weight: 700;
+    margin-bottom: 15px;
 }
 
 .banner-description {
@@ -67,4 +71,38 @@ nav li a {
     font-size: 1.3rem;
     font-weight: 600;
 
+}
+.banner img{
+    width: 100%;
+}
+/* responsive for media queries */
+/* This is for mobile device */
+@media screen and (max-width:576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    nav ul{
+        padding: 0;
+    }
+    nav li{
+        margin: 8px;
+        justify-content: center;
+  
+    }
+}
+/* This is for medium device */
+@media screen and (min-width:576px) and (max-width:990px) {
+    header{
+        padding: 30px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    nav ul{
+        margin: 0;
+        padding: 0;
+    }
 }
